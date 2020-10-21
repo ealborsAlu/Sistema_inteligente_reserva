@@ -11,6 +11,8 @@ public class Clase_principal {
 	
 	
 	public static boolean isAlive(Process p) {
+		
+		// cmd /c" java -jar  C:\Users\Kike\Documents\ejecutables\claseSecundaria.jar"
 
 		// comprobamos si el proceso hijo está funcionando , falso = terminado , si no
 		// crea una excepcion y devuelve true
@@ -24,10 +26,12 @@ public class Clase_principal {
 	}
 	
 	
-
+	
 	public static void main(String[] args) throws IOException {
 		
-		ProcessBuilder builder = new ProcessBuilder(args); // definimos el proceso que se va a ejecutar 
+		
+		
+		ProcessBuilder builder = new ProcessBuilder("java" ,  "-jar" , "C:/Users/Kike/Documents/ejecutables/claseSecundaria.jar" ); // definimos el proceso que se va a ejecutar 
 		//builder.redirectErrorStream(true); // redirige el buffer de error a la salida estándar
 		Process process = builder.start(); // iniciamos el proceso
 		InputStream out = process.getInputStream(); // configuramos la salida del proceso hijo
