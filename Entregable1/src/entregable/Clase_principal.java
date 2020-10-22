@@ -1,5 +1,9 @@
 package entregable;
-
+/*Clase principal encargada de invocar a la secundaria , en esta clase encontramos todo
+ * lo necesaria para poder realizar un intercambio de datos entre la clase hija y la clase padre
+ *@version 1.3
+ *@Enrique Albors
+ */
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
